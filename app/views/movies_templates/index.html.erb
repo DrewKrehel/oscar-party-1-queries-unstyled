@@ -1,9 +1,7 @@
 <h1>List of movies</h1>
 
-<% list_of_movies = Movie.all %>
-
 <ul>
-  <% list_of_movies.each do |a_movie| %>
+  <% @list_of_movies.each do |a_movie| %>
     <li>
       <img src="<%= a_movie.image %>" width="100" >
 
