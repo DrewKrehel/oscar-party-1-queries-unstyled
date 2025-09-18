@@ -3,21 +3,9 @@
 <% list_of_movies = Movie.all %>
 
 <ol>
-  <% first_movie = list_of_movies.at(0) %>
-
-  <li>
-    <%= first_movie.title %> (<%= first_movie.year %>)
-  </li>
-
-  <% second_movie = list_of_movies.at(1) %>
-
-  <li>
-    <%= second_movie.title %> (<%= first_movie.year %>)
-  </li>
-
-  <% third_movie = list_of_movies.at(2) %>
-
-  <li>
-    <%= third_movie.title %> (<%= first_movie.year %>)
-  </li>
+  <% list_of_movies.each do |a_movie| %>
+    <li>
+      <%= a_movie.title %> (<%= a_movie.year %>)
+    </li>
+  <% end %>
 </ol>
