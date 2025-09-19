@@ -13,4 +13,5 @@ class DirectorsController < ApplicationController
     @the_director = matching_directors.at(0)
 
     render({ :template => "director_templates/show" })
+  end
 end
